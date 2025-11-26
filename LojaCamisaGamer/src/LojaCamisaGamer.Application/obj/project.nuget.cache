@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CQ74OyCRXls=",
+  "success": true,
+  "projectFilePath": "/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/LojaCamisaGamer.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/mapster/7.4.0/mapster.7.4.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/mapster.core/1.2.1/mapster.core.1.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,117 @@
+@model LojaCamisaGamer.Application.ViewModels.CamisaViewModel
+
+@{
+    ViewData["Title"] = "Editar Camisa";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="card shadow">
+                <div class="card-header bg-warning">
+                    <h4><i class="bi bi-pencil"></i> Editar Camisa Gamer</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="DataCadastro" />
+                        
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Nome" class="form-label"></label>
+                                    <input asp-for="Nome" class="form-control" />
+                                    <span asp-validation-for="Nome" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="CategoriaId" class="form-label">Categoria</label>
+                                    <select asp-for="CategoriaId" class="form-select" asp-items="ViewBag.Categorias">
+                                        <option value="">Selecione uma categoria</option>
+                                    </select>
+                                    <span asp-validation-for="CategoriaId" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Descricao" class="form-label"></label>
+                            <textarea asp-for="Descricao" class="form-control" rows="4"></textarea>
+                            <span asp-validation-for="Descricao" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label asp-for="Preco" class="form-label"></label>
+                                    <input asp-for="Preco" class="form-control" type="number" step="0.01" />
+                                    <span asp-validation-for="Preco" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label asp-for="Estoque" class="form-label"></label>
+                                    <input asp-for="Estoque" class="form-control" type="number" />
+                                    <span asp-validation-for="Estoque" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label asp-for="Tamanho" class="form-label"></label>
+                                    <select asp-for="Tamanho" class="form-select">
+                                        <option value="">Selecione</option>
+                                        <option value="PP">PP</option>
+                                        <option value="P">P</option>
+                                        <option value="M">M</option>
+                                        <option value="G">G</option>
+                                        <option value="GG">GG</option>
+                                        <option value="XG">XG</option>
+                                    </select>
+                                    <span asp-validation-for="Tamanho" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Cor" class="form-label"></label>
+                                    <input asp-for="Cor" class="form-control" />
+                                    <span asp-validation-for="Cor" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="ImagemUrl" class="form-label"></label>
+                                    <input asp-for="ImagemUrl" class="form-control" />
+                                    <span asp-validation-for="ImagemUrl" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input asp-for="Disponivel" class="form-check-input" />
+                            <label asp-for="Disponivel" class="form-check-label"></label>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Voltar
+                            </a>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="bi bi-check-circle"></i> Atualizar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

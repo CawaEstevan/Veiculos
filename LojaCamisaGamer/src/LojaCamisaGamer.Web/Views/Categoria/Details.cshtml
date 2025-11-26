@@ -1,0 +1,50 @@
+@model LojaCamisaGamer.Application.ViewModels.CategoriaViewModel
+
+@{
+    ViewData["Title"] = "Detalhes da Categoria";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h4><i class="bi bi-info-circle"></i> Detalhes da Categoria</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">Nome</dt>
+                        <dd class="col-sm-9">@Model.Nome</dd>
+
+                        <dt class="col-sm-3">Descrição</dt>
+                        <dd class="col-sm-9">@Model.Descricao</dd>
+
+                        <dt class="col-sm-3">Status</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge @(Model.Ativa ? "bg-success" : "bg-secondary")">
+                                @(Model.Ativa ? "Ativa" : "Inativa")
+                            </span>
+                        </dd>
+
+                        <dt class="col-sm-3">Data de Criação</dt>
+                        <dd class="col-sm-9">@Model.DataCriacao.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                        <dt class="col-sm-3">Total de Camisas</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge bg-primary">@Model.QuantidadeCamisas</span>
+                        </dd>
+                    </dl>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Voltar
+                        </a>
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

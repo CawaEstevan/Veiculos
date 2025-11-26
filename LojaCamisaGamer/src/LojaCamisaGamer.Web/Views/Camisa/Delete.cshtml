@@ -1,0 +1,64 @@
+@model LojaCamisaGamer.Application.ViewModels.CamisaViewModel
+
+@{
+    ViewData["Title"] = "Excluir Camisa";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h4><i class="bi bi-exclamation-triangle"></i> Confirmar Exclusão</h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning">
+                        <strong>Atenção!</strong> Você está prestes a excluir esta camisa. Esta ação não pode ser desfeita.
+                    </div>
+
+                    <dl class="row">
+                        <dt class="col-sm-3">Nome</dt>
+                        <dd class="col-sm-9">@Model.Nome</dd>
+
+                        <dt class="col-sm-3">Categoria</dt>
+                        <dd class="col-sm-9">@Model.CategoriaNome</dd>
+
+                        <dt class="col-sm-3">Descrição</dt>
+                        <dd class="col-sm-9">@Model.Descricao</dd>
+
+                        <dt class="col-sm-3">Preço</dt>
+                        <dd class="col-sm-9">@Model.Preco.ToString("C")</dd>
+
+                        <dt class="col-sm-3">Estoque</dt>
+                        <dd class="col-sm-9">@Model.Estoque unidades</dd>
+
+                        <dt class="col-sm-3">Tamanho</dt>
+                        <dd class="col-sm-9">@Model.Tamanho</dd>
+
+                        <dt class="col-sm-3">Cor</dt>
+                        <dd class="col-sm-9">@Model.Cor</dd>
+
+                        <dt class="col-sm-3">Status</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge @(Model.Disponivel ? "bg-success" : "bg-danger")">
+                                @(Model.Disponivel ? "Disponível" : "Indisponível")
+                            </span>
+                        </dd>
+                    </dl>
+
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="bi bi-trash"></i> Confirmar Exclusão
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

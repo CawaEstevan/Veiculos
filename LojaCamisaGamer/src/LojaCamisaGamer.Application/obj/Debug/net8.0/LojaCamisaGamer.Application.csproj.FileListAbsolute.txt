@@ -1,0 +1,16 @@
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/bin/Debug/net8.0/LojaCamisaGamer.Application.deps.json
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/bin/Debug/net8.0/LojaCamisaGamer.Application.dll
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/bin/Debug/net8.0/LojaCamisaGamer.Application.pdb
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/bin/Debug/net8.0/LojaCamisaGamer.Domain.dll
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/bin/Debug/net8.0/LojaCamisaGamer.Domain.pdb
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCamisaGamer.Application.csproj.AssemblyReference.cache
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCamisaGamer.Application.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCamisaGamer.Application.AssemblyInfoInputs.cache
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCamisaGamer.Application.AssemblyInfo.cs
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCamisaGamer.Application.csproj.CoreCompileInputs.cache
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCamisaGamer.Application.sourcelink.json
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCami.DA55CE0D.Up2Date
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCamisaGamer.Application.dll
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/refint/LojaCamisaGamer.Application.dll
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/LojaCamisaGamer.Application.pdb
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Application/obj/Debug/net8.0/ref/LojaCamisaGamer.Application.dll

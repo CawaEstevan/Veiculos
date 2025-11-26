@@ -1,0 +1,84 @@
+@model LojaCamisaGamer.Application.ViewModels.CamisaViewModel
+
+@{
+    ViewData["Title"] = "Detalhes da Camisa";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h4><i class="bi bi-info-circle"></i> Detalhes da Camisa</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            @if (!string.IsNullOrEmpty(Model.ImagemUrl))
+                            {
+                                <img src="@Model.ImagemUrl" class="img-fluid rounded shadow-sm" alt="@Model.Nome">
+                            }
+                            else
+                            {
+                                <div class="bg-secondary rounded d-flex align-items-center justify-content-center" style="height: 300px;">
+                                    <i class="bi bi-image text-white" style="font-size: 5rem;"></i>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-8">
+                            <dl class="row">
+                                <dt class="col-sm-4">Nome</dt>
+                                <dd class="col-sm-8"><strong>@Model.Nome</strong></dd>
+
+                                <dt class="col-sm-4">Categoria</dt>
+                                <dd class="col-sm-8">
+                                    <span class="badge bg-primary">@Model.CategoriaNome</span>
+                                </dd>
+
+                                <dt class="col-sm-4">Descrição</dt>
+                                <dd class="col-sm-8">@Model.Descricao</dd>
+
+                                <dt class="col-sm-4">Preço</dt>
+                                <dd class="col-sm-8">
+                                    <h4 class="text-success">@Model.Preco.ToString("C")</h4>
+                                </dd>
+
+                                <dt class="col-sm-4">Estoque</dt>
+                                <dd class="col-sm-8">
+                                    <span class="badge bg-secondary">@Model.Estoque unidades</span>
+                                </dd>
+
+                                <dt class="col-sm-4">Tamanho</dt>
+                                <dd class="col-sm-8">
+                                    <span class="badge bg-info">@Model.Tamanho</span>
+                                </dd>
+
+                                <dt class="col-sm-4">Cor</dt>
+                                <dd class="col-sm-8">@Model.Cor</dd>
+
+                                <dt class="col-sm-4">Status</dt>
+                                <dd class="col-sm-8">
+                                    <span class="badge @(Model.Disponivel ? "bg-success" : "bg-danger")">
+                                        @(Model.Disponivel ? "Disponível" : "Indisponível")
+                                    </span>
+                                </dd>
+
+                                <dt class="col-sm-4">Data de Cadastro</dt>
+                                <dd class="col-sm-8">@Model.DataCadastro.ToString("dd/MM/yyyy HH:mm")</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Voltar
+                        </a>
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

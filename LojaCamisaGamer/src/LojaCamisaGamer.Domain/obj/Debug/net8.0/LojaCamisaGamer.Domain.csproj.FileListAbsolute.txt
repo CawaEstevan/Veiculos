@@ -1,0 +1,12 @@
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/bin/Debug/net8.0/LojaCamisaGamer.Domain.deps.json
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/bin/Debug/net8.0/LojaCamisaGamer.Domain.dll
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/bin/Debug/net8.0/LojaCamisaGamer.Domain.pdb
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/LojaCamisaGamer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/LojaCamisaGamer.Domain.AssemblyInfoInputs.cache
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/LojaCamisaGamer.Domain.AssemblyInfo.cs
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/LojaCamisaGamer.Domain.csproj.CoreCompileInputs.cache
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/LojaCamisaGamer.Domain.sourcelink.json
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/LojaCamisaGamer.Domain.dll
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/refint/LojaCamisaGamer.Domain.dll
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/LojaCamisaGamer.Domain.pdb
+/workspaces/Veiculos/LojaCamisaGamer/src/LojaCamisaGamer.Domain/obj/Debug/net8.0/ref/LojaCamisaGamer.Domain.dll

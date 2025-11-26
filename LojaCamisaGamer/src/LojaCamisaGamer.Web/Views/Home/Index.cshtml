@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="hero-section">
+    <div class="container text-center">
+        <h1 class="display-4">
+            <i class="bi bi-controller"></i> Bem-vindo à Loja Camisa Gamer
+        </h1>
+        <p class="lead">Sistema de gerenciamento de camisas gamer com Clean Architecture e DDD</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 h-100">
+                <div class="card-body text-center p-5">
+                    <i class="bi bi-tag-fill text-primary" style="font-size: 4rem;"></i>
+                    <h3 class="card-title mt-3">Categorias</h3>
+                    <p class="card-text">Gerencie as categorias de camisas gamer: FPS, MOBA, RPG, Battle Royale e muito mais!</p>
+                    <a asp-controller="Categoria" asp-action="Index" class="btn btn-primary btn-lg mt-3">
+                        <i class="bi bi-arrow-right-circle"></i> Acessar Categorias
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 h-100">
+                <div class="card-body text-center p-5">
+                    <i class="bi bi-shop text-success" style="font-size: 4rem;"></i>
+                    <h3 class="card-title mt-3">Camisas</h3>
+                    <p class="card-text">Cadastre e gerencie as camisas da sua loja com todos os detalhes: preço, estoque, tamanho e cores!</p>
+                    <a asp-controller="Camisa" asp-action="Index" class="btn btn-success btn-lg mt-3">
+                        <i class="bi bi-arrow-right-circle"></i> Acessar Camisas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    <h4><i class="bi bi-info-circle"></i> Recursos Implementados</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Clean Architecture (4 camadas)
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Domain-Driven Design (DDD)
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Relacionamento 1:N (Categoria → Camisas)
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Entity Framework Core + SQL Server
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Migrations
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Mapster (mapeamento de objetos)
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> CRUD completo
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Validações personalizadas
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Busca dinâmica com AJAX
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Injeção de Dependências (DI)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
